@@ -113,12 +113,14 @@ section h2 {
 }
     /* --- Contenedor Principal del Scroll --- */
 .scroll-snap-container {
-  height: 100vh; /* Ocupa toda la altura de la ventana */
-  overflow-y: scroll; /* Permite el scroll vertical */
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
 
-  /* Propiedades de Scroll Snapping */
-  scroll-snap-type: y mandatory; /* o 'y proximity' para un comportamiento más suave */
-  scroll-behavior: smooth; /* Para un desplazamiento suave al navegar a secciones */
+.scroll-snap-section {
+  scroll-snap-align: start;
 }
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -130,18 +132,19 @@ section h2 {
         <li><a href="#productos">Pulseras</a></li>
         <li><a href="#productos2">Pegatinas</a></li>
         <li><a href="#productos3">blinding bag</a></li>
-        <li><a href="#productos4">Muñecas</a></li>
+        <li><a href="#productos4">Muñecos</a></li>
 <li><a href="#productos5">Posit</a></li>
 <li><a href="#productos6">Otros</a></li>
     </ul>
 </div> 
 <center>
   <div class="scroll-snap-container">
+    <div class="scroll-snap-section">
 <h1 class="animate__animated animate__jackInTheBox">Isa y Garazi</h1>
   <h1 class="animate__animated animate__jackInTheBox">montan un negocio</h1>
   <h1 class="animate__animated animate__jackInTheBox">para conseguir dinero para el viaje de fin de curso</h1>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos" class="neon">⬇ Scrollear ⬇</a></h1>
-  </div>
+  </div></div>
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
@@ -149,13 +152,14 @@ section h2 {
   <svg width="100%" higth="100%">
   </svg>
   <div class="scroll-snap-container">
+<div class="scroll-snap-section">
   <h1 id="productos">Pulseras hello kitty</h1>
   <li>Simple (1€)</li>
   <li>Compleja (2,05€)</li>
   <li>con nombre (3€)</li>
   <li>sorpresa (1€)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower" ><a href="#productos2" class="neon">⬇ Ver más ⬇</a></h1>
-    </div>
+    </div></div>
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
@@ -163,12 +167,13 @@ section h2 {
   <svg width="100%" higth="100%">
   </svg>
     <div class="scroll-snap-container">
+<div class="scroll-snap-section">
   <h1 id="productos2">Pegatinas</h1>
 <li>Pegatinas (25 cent)</li>
   <li>pegatinas 2.0 (25 cent)</li>
   <li>pegatinas cara (50 cent)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos3" class="neon">⬇ Ver más ⬇</a></h1>
-      </div>
+      </div></div>
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
@@ -176,11 +181,12 @@ section h2 {
   <svg width="100%" higth="100%">
   </svg>
       <div class="scroll-snap-container">
+<div class="scroll-snap-section">
   <h1 id="productos3">Blinding Bags</h1>
   <li>Normal (1€)</li>
   <li>Mini (50 cent)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos4" class="neon">⬇ Ver más ⬇</a></h1>
-        </div>
+        </div></div>
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
@@ -188,11 +194,12 @@ section h2 {
   <svg width="100%" higth="100%">
   </svg>
         <div class="scroll-snap-container">
+<div class="scroll-snap-section">
   <h1 id="productos4">Muñecos</h1>
   <li>de lana (2€)</li>
   <li>de plastilina (1€)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos5" class="neon">⬇ Ver más ⬇</a></h1>
-          </div>
+          </div></div>
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
@@ -200,11 +207,12 @@ section h2 {
   <svg width="100%" higth="100%">
   </svg>
           <div class="scroll-snap-container">
+<div class="scroll-snap-section">
   <h1 id="productos5">Posit (10 cent)</h1>
   <li>de Kuromi</li>
   <li>de My Melody</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos6" class="neon">⬇ Ver más ⬇</a></h1>
-            </div>
+</div></div>
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
@@ -212,9 +220,11 @@ section h2 {
   <svg width="100%" higth="100%">
   </svg>
             <div class="scroll-snap-container">
+<div class="scroll-snap-section">
   <h1 id="productos6">Otros</h1>
   <li>Unas postizas (10 cent)</li>
   <li>Tatuaje (50 cent)</li>
+            </div>
             </div>
   <svg width="100%" higth="100%">
   </svg>
