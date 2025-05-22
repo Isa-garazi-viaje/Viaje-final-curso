@@ -111,6 +111,25 @@ section h2 {
       color: #800080;
       text-shadow: 0 0 20px #800080;
     }
+    /* 1. La clase para tu CONTENEDOR de scroll */
+.scroll-snap-container {
+  /* Propiedades para el comportamiento del scroll */
+  overflow-y: scroll; /* O 'overflow-x: scroll;' si es horizontal */
+  scroll-snap-type: y mandatory; /* 'y' para vertical, 'x' para horizontal. 'mandatory' fuerza el ajuste. */
+  -webkit-overflow-scrolling: touch; /* Mejora la experiencia en iOS */
+
+  /* Puedes añadir un alto/ancho específico si este contenedor es el que maneja el scroll */
+  /* Ejemplo: height: 100vh; para que ocupe toda la altura de la ventana */
+}
+
+/* 2. La clase para los ITEMS dentro del contenedor, a los que se ajustará el scroll */
+.scroll-snap-item {
+  /* Propiedad para la alineación del item */
+  scroll-snap-align: start; /* O 'center' o 'end' para alinear el item al inicio, centro o fin del contenedor */
+
+  /* Puedes añadir un alto/ancho fijo si quieres que cada item ocupe una "pantalla" */
+  /* Ejemplo: height: 100vh; para que cada sección ocupe toda la altura de la ventana */
+}
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -134,91 +153,91 @@ section h2 {
   <h1 class="animate__animated animate__jackInTheBox">montan un negocio</h1>
   <h1 class="animate__animated animate__jackInTheBox">para conseguir dinero para el viaje de fin de curso</h1>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos" class="neon">⬇ Scrollear ⬇</a></h1>
-  </div></div>
+  </div>
  <img src="Cat.gif" higth="250" width="250" alt="Hello kitty con gatito súper mono">
+  </div><div class="scroll-snap-container">
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
   </svg>
-  <div class="scroll-snap-container">
-<div class="scroll-snap-section">
+<div class="scroll-snap-item">
   <h1 id="productos" class="sombra">Pulseras hello kitty</h1>
   <li>Simple (1€)</li>
   <li>Compleja (2€)</li>
   <li>con nombre (3€)</li>
   <li>sorpresa (1€)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower" ><a href="#productos2" class="neon">⬇ Ver más ⬇</a></h1>
-    </div></div>
+    </div>
+  <svg width="100%" higth="100%">
+  </svg>
+  </div><div class="scroll-snap-container">
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
   </svg>
-  <svg width="100%" higth="100%">
-  </svg>
-    <div class="scroll-snap-container">
-<div class="scroll-snap-section">
+<div class="scroll-snap-item">
   <h1 id="productos2" class="sombra">Pegatinas</h1>
 <li>Pegatinas (25 cent)</li>
   <li>pegatinas 2.0 (25 cent)</li>
   <li>pegatinas cara (50 cent)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos3" class="neon">⬇ Ver más ⬇</a></h1>
-      </div></div>
+      </div>
+  <svg width="100%" higth="100%">
+  </svg>
+      </div><div class="scroll-snap-container">
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
   </svg>
-  <svg width="100%" higth="100%">
-  </svg>
-      <div class="scroll-snap-container">
-<div class="scroll-snap-section">
+<div class="scroll-snap-item">
   <h1 id="productos3" class="sombra">Blinding Bags</h1>
   <li>Normal (1€)</li>
   <li>Mini (50 cent)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos4" class="neon">⬇ Ver más ⬇</a></h1>
-        </div></div>
+        </div>
+  <svg width="100%" higth="100%">
+  </svg>
+        </div><div class="scroll-snap-container">
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
   </svg>
-  <svg width="100%" higth="100%">
-  </svg>
-        <div class="scroll-snap-container">
-<div class="scroll-snap-section">
+<div class="scroll-snap-item">
   <h1 id="productos4" class="sombra">Muñecos</h1>
   <li>de lana (2€)</li>
   <li>de plastilina (1€)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos5" class="neon">⬇ Ver más ⬇</a></h1>
-          </div></div>
+          </div>
+  <svg width="100%" higth="100%">
+  </svg>
+          </div><div class="scroll-snap-container">
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
   </svg>
-  <svg width="100%" higth="100%">
-  </svg>
-          <div class="scroll-snap-container">
-<div class="scroll-snap-section">
+<div class="scroll-snap-item">
   <h1 id="productos5" class="sombra">Posit (10 cent)</h1>
   <li>de Kuromi</li>
   <li>de My Melody</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos6" class="neon">⬇ Ver más ⬇</a></h1>
-</div></div>
+</div>
+  <svg width="100%" higth="100%">
+  </svg>
+</div><div class="scroll-snap-container">
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
   </svg>
-  <svg width="100%" higth="100%">
-  </svg>
-            <div class="scroll-snap-container">
-<div class="scroll-snap-section">
+            <div class="scroll-snap-item">
   <h1 id="productos6" class="sombra">Otros</h1>
   <li>Uñas postizas (10 cent)</li>
   <li>Tatuaje (50 cent)</li>
             </div>
-            </div>
   <svg width="100%" higth="100%">
   </svg>
   <svg width="100%" higth="100%">
   </svg>
+              </div>
 </center>
   <h2>con la tecnología de DID</h2>
 </body>
