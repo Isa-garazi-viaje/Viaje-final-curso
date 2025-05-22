@@ -89,23 +89,6 @@ section h2 {
     border-bottom: 2px solid #bdc3c7;
     padding-bottom: 10px;
 }
-
-/* Para pantallas más pequeñas (responsividad básica) */
-@media (max-width: 768px) {
-    #menu-fijo {
-        padding: 8px 12px 8px 15px; /* Menos padding en móviles */
-        font-size: 0.99em; /* Tamaño de fuente aún más pequeño */
-    }
-    #menu-fijo a {
-        padding: 5px 8px;
-    }
-    section {
-        padding: 80px 40px; /* Reducir padding en secciones */
-    }
-    section h2 {
-        font-size: 2em;
-    }
-}
 .neon {
   color: #00FFFF; /* El color de tu texto neón */
   text-shadow: 0 0 15px #00FFFF; /* El efecto de resplandor neón */
@@ -118,7 +101,11 @@ section h2 {
    color: #FF0000;
    text-shadow: 0 0 10px #FF0000;
    text-align: centre;
- }   
+ } 
+    .sombra{
+      color: #800080;
+      text-shadow: 20px 20px 15px #800080;
+    }
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -150,7 +137,7 @@ section h2 {
   </svg>
   <div class="scroll-snap-container">
 <div class="scroll-snap-section">
-  <h1 id="productos">Pulseras hello kitty</h1>
+  <h1 id="productos" class="sombra">Pulseras hello kitty</h1>
   <li>Simple (1€)</li>
   <li>Compleja (2,05€)</li>
   <li>con nombre (3€)</li>
@@ -165,7 +152,7 @@ section h2 {
   </svg>
     <div class="scroll-snap-container">
 <div class="scroll-snap-section">
-  <h1 id="productos2">Pegatinas</h1>
+  <h1 id="productos2" class="sombra">Pegatinas</h1>
 <li>Pegatinas (25 cent)</li>
   <li>pegatinas 2.0 (25 cent)</li>
   <li>pegatinas cara (50 cent)</li>
@@ -179,7 +166,7 @@ section h2 {
   </svg>
       <div class="scroll-snap-container">
 <div class="scroll-snap-section">
-  <h1 id="productos3">Blinding Bags</h1>
+  <h1 id="productos3" class="sombra">Blinding Bags</h1>
   <li>Normal (1€)</li>
   <li>Mini (50 cent)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos4" class="neon">⬇ Ver más ⬇</a></h1>
@@ -192,7 +179,7 @@ section h2 {
   </svg>
         <div class="scroll-snap-container">
 <div class="scroll-snap-section">
-  <h1 id="productos4">Muñecos</h1>
+  <h1 id="productos4" class="sombra">Muñecos</h1>
   <li>de lana (2€)</li>
   <li>de plastilina (1€)</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos5" class="neon">⬇ Ver más ⬇</a></h1>
@@ -205,7 +192,7 @@ section h2 {
   </svg>
           <div class="scroll-snap-container">
 <div class="scroll-snap-section">
-  <h1 id="productos5">Posit (10 cent)</h1>
+  <h1 id="productos5" class="sombra">Posit (10 cent)</h1>
   <li>de Kuromi</li>
   <li>de My Melody</li>
   <h1 class="animate__animated animate__shakeY animate__infinite animate__slower"><a href="#productos6" class="neon">⬇ Ver más ⬇</a></h1>
@@ -218,8 +205,8 @@ section h2 {
   </svg>
             <div class="scroll-snap-container">
 <div class="scroll-snap-section">
-  <h1 id="productos6">Otros</h1>
-  <li>Unas postizas (10 cent)</li>
+  <h1 id="productos6" class="sombra">Otros</h1>
+  <li>Uñas postizas (10 cent)</li>
   <li>Tatuaje (50 cent)</li>
             </div>
             </div>
